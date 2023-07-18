@@ -1,5 +1,5 @@
 # Likelihood-based privacy attack.
-In this repository, we open-source our privacy attack from our paper Ponte, Wieringa, Boot and Verhoef (2023). This privacy attack allows you to measure the associated privacy risk of your (protected) data set.
+In this repository, we open-source our privacy attack from our paper. This privacy attack allows you to measure the associated privacy risk of your (protected) data set.
 
 ## Likelihood-based privacy attack code
 We provide a function that replicates our privacy attack in likelihood_privacy_attack.py. This function requires the following parameters: 
