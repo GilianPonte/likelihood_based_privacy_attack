@@ -1,3 +1,9 @@
+
+[![PyPI - Python Version](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue)]()
+[![PyPI version](https://img.shields.io/pypi/v/openfl)]()
+[![Citation](https://img.shields.io/badge/cite-citation-brightgreen)]()
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+
 # Likelihood-based privacy attack.
 In this repository, we open-source our privacy attack from our paper. This privacy attack allows you to measure the associated privacy risk of your (protected) data set. The privacy risk is estimated within the framework of differential privacy: 
 
@@ -114,5 +120,5 @@ protected_training = swap25_train, protected_adversary = swap25_adversary_traini
 
 In line with our paper, we find that swapping gives infinite privacy risk.
 
-## citing this work
+## Citing this work
 Please cite this privacy attack using: _to be determined_
