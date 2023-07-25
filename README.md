@@ -3,7 +3,7 @@ In this repository, we open-source our privacy attack from our paper. This priva
 
 $\hat{\varepsilon} =\max \left(\log \left(\frac{1-(1/N)-\text{FPR}}{\text{FNR}}\right), \log \left(\frac{1-(1/N)-\text{FNR}}{\text{FPR}}\right)\right),$
 
-where; $N$ is the sample size; FPR is the false positive rate (or probability of membership given non-membership of the training data); FNR is the false negative rate (or probability of membership given non-membership of the training data). 
+where; _N_ is the sample size; _FPR_ is the false positive rate (or probability of membership given non-membership of the training data); _FNR_ is the false negative rate (or probability of membership given non-membership of the training data). 
 
 ## Likelihood-based privacy attack code
 We provide a function that replicates our privacy attack in likelihood_privacy_attack.py. This function requires the following parameters: 
@@ -13,7 +13,7 @@ We provide a function that replicates our privacy attack in likelihood_privacy_a
 3. `train`: requires the real training set.
 4. `adversary`: requires the adversary set.
 5. `outside_training`: requires observations that were not seen during training or adversary.
-6. `protected_training`: requires the protected training data (protected version of `train`). Protected data can be a swapped data set or randomly shuffled.
+6. `protected_training`: requires the protected training data (protected version of `train`).
 7. `protected_adversary`: requires the protected adversary data (protected version of `adversary`).
 
 ## Example using swapping.
