@@ -113,3 +113,6 @@ protected_training = swap25_train, protected_adversary = swap25_adversary_traini
 ```
 
 In line with our paper, we find that swapping gives infinite privacy risk.
+
+## citing this work
+Please cite this privacy attack using: _to be determined_
