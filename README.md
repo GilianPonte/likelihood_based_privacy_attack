@@ -9,7 +9,7 @@ In this repository, we open-source our privacy attack from our paper. This priva
 
 $\hat{\varepsilon} =\max \left(\log \left(\frac{1-(1/N)-\text{FPR}}{\text{FNR}}\right), \log \left(\frac{1-(1/N)-\text{FNR}}{\text{FPR}}\right)\right),$
 
-where; _N_ is the sample size; _FPR_ is the false positive rate (or probability of membership given non-membership of the training data); _FNR_ is the false negative rate (or probability of membership given non-membership of the training data). 
+where _N_ is the sample size. _FPR_ is the false positive rate (or probability of membership given non-membership of the training data); _FNR_ is the false negative rate (or probability of membership given non-membership of the training data). 
 
 ## Likelihood-based privacy attack code
 We provide a function that replicates our privacy attack in likelihood_privacy_attack.py. This function requires the following parameters: 
