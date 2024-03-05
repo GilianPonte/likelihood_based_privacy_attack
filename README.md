@@ -84,7 +84,7 @@ def privacy_attack(seed, simulations, train, adversary, outside_training, protec
     # to prevent a naive model
     N = len(train)/10
 
-    # step 1, 2 from paper
+    # step 1, 2 and 3 from paper
     params = {"bandwidth": np.logspace(-1, 1, 20)} # vary the bandwith
     grid_train = GridSearchCV(KernelDensity(), params, n_jobs = -1) # cross validate for bandwiths
     grid_train.fit(protected_training) # estimate pdf from train data.
@@ -94,12 +94,12 @@ def privacy_attack(seed, simulations, train, adversary, outside_training, protec
     grid.fit(protected_adversary) # estimate pdf from adversary data
     kde_adversary = grid.best_estimator_ # get best estimator from CV
 
-    # step 3
+    # step 4
     density_train = kde_train.score_samples(train) # score train examples from train on pdf_train
     density_adversary = kde_adversary.score_samples(train) # score train examples from train on pdf_adversary
     TPR = sum(density_train > density_adversary)/len(density_train) # calculate TPR
 
-    # step 4
+    # step 5
     density_train_new = kde_train.score_samples(outside_training) # score eval_outside examples on train density
     density_adversary_new = kde_adversary.score_samples(outside_training) # score eval_outside examples on adversary density
     FPR = sum(density_train_new > density_adversary_new)/len(density_train_new) # calculate FPR
