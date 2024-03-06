@@ -11,6 +11,14 @@ $\hat{\varepsilon} =\max \left(\log \left(\frac{1-(1/N)-\text{FPR}}{\text{FNR}}\
 
 where _N_ is the sample size. _FPR_ is the false positive rate (or probability of membership given non-membership of the training data); _FNR_ is the false negative rate (or probability of membership given non-membership of the training data). 
 
+## Installation
+Use the following code to install this package.
+
+```python
+!pip install git+https://github.com/GilianPonte/likelihood_based_privacy_attack.git
+from likelihood_based_privacy_attack import privacy_attack
+```
+
 ## Likelihood-based privacy attack code
 We provide a function that replicates our privacy attack in likelihood_privacy_attack.py. This function requires the following parameters: 
 
