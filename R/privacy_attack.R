@@ -1,3 +1,17 @@
+#' Function to perform the privacy attack
+#'
+#' This function takes protected and privacy-sensitive data as input
+#'
+#' @param seed The seed for replication purposes.
+#' @param simulations The number of simulations.
+#' @param train The unprotected training set.
+#' @param adversary The unprotected adversary set.
+#' @param outside_training The new incoming samples.
+#' @param protected_training The protected training set.
+#' @param protected_adversary The protected adversary set.
+#' @return list of epsilons, FPR, TNR, FNR, TPR
+#' @examples See https://github.com/GilianPonte/likelihood_based_privacy_attack/blob/main/README.md
+
 privacy_attack <- function(seed, simulations, train, adversary, outside_training, protected_training, protected_adversary) {
   set.seed(seed)
   epsilons <- c() # To store results
@@ -67,8 +81,3 @@ privacy_attack <- function(seed, simulations, train, adversary, outside_training
   }
   return(list(epsilons = epsilons, FPR = FPR, TNR = TNR, FNR = FNR, TPR = TPR))
 }
-
-# Apply privacy attack
-privacy_attack(seed = 1, simulations = 10, train = train, adversary = adversary_training, 
-               outside_training = adversary_training, protected_training = swap25_train, 
-               protected_adversary = swap25_adversary_training)
