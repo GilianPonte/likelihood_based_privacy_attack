@@ -16,7 +16,7 @@ Use the following code to install this package.
 
 ```python
 !pip install git+https://github.com/GilianPonte/likelihood_based_privacy_attack.git
-from likelihood_based_privacy_attack import privacy_attack
+from likelihood_based_privacy_attack import attacks
 ```
 
 ## Likelihood-based privacy attack code
@@ -39,7 +39,7 @@ from sklearn.model_selection import train_test_split
 
 # import privacy attack
 !pip install git+https://github.com/GilianPonte/likelihood_based_privacy_attack.git
-from likelihood_based_privacy_attack import privacy_attack
+from likelihood_based_privacy_attack import attacks
 
 # we read public churn data
 url = 'https://raw.githubusercontent.com/albayraktaroglu/Datasets/master/churn.csv'
@@ -78,7 +78,7 @@ swap25_train = swapping(percent = 0.25, data = train) # apply swapping 25% to tr
 swap25_adversary_training = swapping(percent = 0.25, data = adversary_training)  # apply swapping 25% to adv
 
 # apply privacy attack
-privacy_attack(seed = 1, simulations = 10, train = train, adversary = adversary_training, outside_training = evaluation_outside_training,
+attacks.privacy_attack(seed = 1, simulations = 10, train = train, adversary = adversary_training, outside_training = evaluation_outside_training,
 protected_training = swap25_train, protected_adversary = swap25_adversary_training)
 ```
 ## Now in R:
