@@ -117,6 +117,7 @@ def privacy_attack(seed, simulations, train, adversary, outside_training, protec
 privacy_attack(seed = 1, simulations = 10, train = train, adversary = adversary_training, outside_training = evaluation_outside_training,
 protected_training = swap25_train, protected_adversary = swap25_adversary_training)
 ```
+Now in R:
 ```R
 
 # Load required libraries
