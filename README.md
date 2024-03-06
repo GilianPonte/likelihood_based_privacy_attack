@@ -22,7 +22,7 @@ We provide a function that replicates our privacy attack in likelihood_privacy_a
 6. `protected_training`: requires the protected training data (protected version of `train`).
 7. `protected_adversary`: requires the protected adversary data (protected version of `adversary`).
 
-## Example using swapping in Python and R (see for R below).
+## Tutorial using swapping in Python and R (see for R below).
 We provide an example with public churn data here:
 ```python
 # first we need to import some dependencies.
