@@ -217,4 +217,4 @@ privacy_attack(seed = 1, simulations = 10, train = train, adversary = adversary_
 In line with our paper, we find that swapping gives infinite privacy risk.
 
 ## Citing this work
-Please cite this privacy attack using: _to be determined_
+Please cite this privacy attack using: Ponte et al. (2024) Where’s Waldo? A framework for quantifying the privacy-utility trade-off in marketing applications, _International Journal of Research in Marketing_
