@@ -217,4 +217,20 @@ privacy_attack(seed = 1, simulations = 10, train = train, adversary = adversary_
 In line with our paper, we find that swapping gives infinite privacy risk.
 
 ## Citing this work
-Please cite this privacy attack using: Ponte et al. (2024) Where’s Waldo? A framework for quantifying the privacy-utility trade-off in marketing applications, _International Journal of Research in Marketing_
+Please cite this privacy attack using: Ponte et al. (2024) Where’s Waldo? A framework for quantifying the privacy-utility trade-off in marketing applications, _International Journal of Research in Marketing_ 
+Please find the bibtex here: 
+
+@article{Ponte_2024,
+title = {Where’s Waldo? A framework for quantifying the privacy-utility trade-off in marketing applications},
+journal = {International Journal of Research in Marketing},
+volume = {41},
+number = {3},
+pages = {529-546},
+year = {2024},
+issn = {0167-8116},
+doi = {https://doi.org/10.1016/j.ijresmar.2024.05.003},
+url = {https://www.sciencedirect.com/science/article/pii/S0167811624000417},
+author = {Gilian R. Ponte and Jaap E. Wieringa and Tom Boot and Peter C. Verhoef},
+keywords = {Privacy, Differential privacy, Generative adversarial networks},
+abstract = {Firms can rely on various data protection methods to comply with the General Data Protection Regulation’s (GDPR) anonymization directive. We develop a privacy attack to estimate customers’ privacy risk and find that data protection methods commonly used in practice do not offer a reliable guarantee of privacy protection.We therefore develop a framework that describes the use of deep learning to generate synthetic data that are both (differentially) private, and useful for marketing analysts. Empirically, we apply our framework to two privacy-sensitive marketing applications in which an analyst is faced with everyday managerial practices. In contrast to GDPR’s directive to minimize data collection, we show that customers’ privacy risk can be reduced by blending into a large crowd: a “Where’s Waldo” effect. Our framework provides a data protection method with a formal privacy guarantee and allows analysts to quantify, control, and communicate privacy risk levels with stakeholders, draw meaningful insights, and share data even under privacy regulations.}
+}
